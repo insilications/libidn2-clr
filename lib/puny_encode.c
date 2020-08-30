@@ -229,5 +229,5 @@ int punycode_encode(
 __typeof__ (_idn2_punycode_encode_internal) _idn2_punycode_encode
    __attribute__ ((visibility ("default"),
                    alias ("_idn2_punycode_encode_internal")));
-__asm__ (".symver _idn2_punycode_encode, _idn2_punycode_encode@IDN2_0.0.0");
+   __attribute__((__symver__("_idn2_punycode_encode@IDN2_0.0.0")));
 #endif
